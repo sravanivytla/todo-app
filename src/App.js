@@ -1,26 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
+import TodoApp from './components/todo-app/TodoApp';
+import FirstComponent, {SecondComponent} from './components/learning-examples/FirstComponent';
+import Counter from './components/counter-application/counter/counter';
 import logo from './logo.svg';
 import './App.css';
+import './bootstrap.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <header className="App-header">
+      <Counter></Counter>
+  </header>*/}
+    <TodoApp></TodoApp>
+    
     </div>
   );
 }
+
+// class LearningComponets extends Component {
+//   render(){
+//     return (
+//       <p>LearningComponents</p>
+
+//     );
+//   }
+// }
+
 
 export default App;
